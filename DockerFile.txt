@@ -17,4 +17,16 @@ Estructura:
 	CMD ["python3", poyecto.py]	(CMD define el comando predeterminado que se ejecutará cuando el contenedor arranque, por ejemplo:
 					 al iniciar ejecutara poyecto.py con python3, seria algo asi: "python3 proyecto.py")
 
-	
+######## BUILD #######
+
+docker build -t nombre_imagen . 	(El punto (.) al final indica el directorio de construcción, es decir, dónde buscar el Dockerfile 					 y los archivos necesarios para construir la imagen.)
+
+###### verificar imagen #######
+
+docker images
+
+
+###### Ejecutar ########
+
+docker run -it --rm getting-started     (-it ejecutar el contenedor de manera interactiva, permitiéndote escribir comandos y recibir 						respuestas en tiempo real.)
+					(--rm elimina el contendor al terminar la ejecucion)
