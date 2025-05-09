@@ -1,0 +1,20 @@
+###### Crear el dockerfile dentro del directorio de trabajo (Facilita la Copia)###### 
+Estructura:
+	
+	FROM amazonlinux:latest (Se puede bajar localmente con docker "pull amazonlinux:latest", y si no lo tienes, se descargara 					 automaticamente cuando se compile. Desde dockerhub se encuentran mas imagenes con su tag)
+	
+	
+	WORKDIR /NOMBRE 	(Se puede Agregar cualquier nombre que desees, ya que este se creara dentro del contendor, para 
+				 que despues se puedan guardar los archivos del directorio en el cual este tu proyecto...)
+	
+	
+	COPY . . 		(Realiza una copia de los archivos de tu directorio para alojarlos en el DIR del contendor /NOMBRE)
+		
+
+	RUN yum install -y python3     (Correr cualquier tipo de comando, por ejemplo, ahi se le esta indicando que instale python3 para 					poder correr un promgrama hecho en python)
+	
+
+	CMD ["python3", poyecto.py]	(CMD define el comando predeterminado que se ejecutará cuando el contenedor arranque, por ejemplo:
+					 al iniciar ejecutara poyecto.py con python3, seria algo asi: "python3 proyecto.py")
+
+	
