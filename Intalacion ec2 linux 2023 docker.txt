@@ -1,0 +1,9 @@
+sudo dnf update -y
+sudo dnf install -y docker
+sudo systemctl enable docker
+sudo systemctl start docker
+docker version  #version
+sudo usermod -aG docker ec2-user
+#Salir de terminal y volver a entrar
+docker run hello-world
+docker ps

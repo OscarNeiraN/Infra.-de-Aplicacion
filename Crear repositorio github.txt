@@ -1,0 +1,14 @@
+git init # iniciar
+git add . # ruta del archivo o documento (hay que estar dentro del directorio de los archivos)
+git commit "first proyect" # subir cambios del repositorio
+git branch -M main # define el nombre de la rama principal de tu proyecto
+git remote add origin https://github.com/usuario/directorio.git # ruta del directorio de github
+git push -u origin main # sincronizacion de local a remoto
+
+
+
+##### Cuando se realicen cambios realizar lo siguiente #####
+
+git add . # hay que estar dentro del directorio de los archivos 
+git commit -m "Mensaje" # Registra cambios en el repositorio
+git push # sincroniza repositorio local con el remoto

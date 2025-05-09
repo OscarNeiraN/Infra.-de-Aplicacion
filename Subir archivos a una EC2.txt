@@ -1,0 +1,2 @@
+PowerShell
+scp -i C:\ruta\local\claves.pem -r C:\ruta\ruta\archivo-o-carpeta ec2-user@ip-publica:/home/ec2-user/directorio a almacenar
